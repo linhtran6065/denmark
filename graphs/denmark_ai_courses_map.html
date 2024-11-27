@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_36dba3603576c3b3e274f2c19d40f419 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_36dba3603576c3b3e274f2c19d40f419" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_36dba3603576c3b3e274f2c19d40f419 = L.map(
+                "map_36dba3603576c3b3e274f2c19d40f419",
+                {
+                    center: [56.26392, 9.501785],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bbab2a5f0110fd53ffefa1b9585bbba7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_bbab2a5f0110fd53ffefa1b9585bbba7.addTo(map_36dba3603576c3b3e274f2c19d40f419);
+        
+    
+            var marker_513b9c158b21fbdc15ac4e1f3900acc9 = L.marker(
+                [57.0141055433052, 9.98460904412677],
+                {}
+            ).addTo(map_36dba3603576c3b3e274f2c19d40f419);
+        
+    
+            var icon_90b4c7dd3287bf5aaf0ffd7b8983db5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_513b9c158b21fbdc15ac4e1f3900acc9.setIcon(icon_90b4c7dd3287bf5aaf0ffd7b8983db5e);
+        
+    
+        var popup_90beb91f8ac72918671d1b668b7dd616 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_eef763108be91a84385a6b23176fdc74 = $(`<div id="html_eef763108be91a84385a6b23176fdc74" style="width: 100.0%; height: 100.0%;">     <b>Institution:</b> Aalborg University (AAU)<br>     <table style="width:100%; border-collapse: collapse; border: 1px solid black;">         <tr>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Course Name</th>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Tuition Fee</th>         </tr>         <tr><td style='border: 1px solid black; padding: 5px;'>Electronic Systems, MSc in Engineering</td><td style='border: 1px solid black; padding: 5px;'>7455 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Innovative Communication Technologies and Entrepreneurship, MSc in Engineering</td><td style='border: 1px solid black; padding: 5px;'>7455 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Advanced Power Electronics, MSc in Engineering</td><td style='border: 1px solid black; padding: 5px;'>7455 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Computer Engineering, MSc in Engineering</td><td style='border: 1px solid black; padding: 5px;'>7455 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Biotechnology, MSc in Engineering</td><td style='border: 1px solid black; padding: 5px;'>7455 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Chemical Engineering, MSc in Engineering</td><td style='border: 1px solid black; padding: 5px;'>7455 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Economics and Business Administration</td><td style='border: 1px solid black; padding: 5px;'>3582 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Medialogy, MSc</td><td style='border: 1px solid black; padding: 5px;'>7455 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Nanobiotechnology, MSc in Engineering</td><td style='border: 1px solid black; padding: 5px;'>7455 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Nanomaterials and Nanophysics, Specialisation of Materials and Nanotechnology</td><td style='border: 1px solid black; padding: 5px;'>7455 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Risk and Safety Management, MSc in Technology</td><td style='border: 1px solid black; padding: 5px;'>7455 EUR</td></tr>     </table>     </div>`)[0];
+                popup_90beb91f8ac72918671d1b668b7dd616.setContent(html_eef763108be91a84385a6b23176fdc74);
+            
+        
+
+        marker_513b9c158b21fbdc15ac4e1f3900acc9.bindPopup(popup_90beb91f8ac72918671d1b668b7dd616)
+        ;
+
+        
+    
+    
+            var marker_1e50a71de6b96482d4d578548a5adca9 = L.marker(
+                [56.1661417153284, 10.2000752264348],
+                {}
+            ).addTo(map_36dba3603576c3b3e274f2c19d40f419);
+        
+    
+            var icon_ec818f3cffa56a4618ce80b772bc1354 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1e50a71de6b96482d4d578548a5adca9.setIcon(icon_ec818f3cffa56a4618ce80b772bc1354);
+        
+    
+        var popup_d755f9be6086db63d5a102dcf195beae = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_ef94d7fb7ce52417dcb0c9ea57a5ad95 = $(`<div id="html_ef94d7fb7ce52417dcb0c9ea57a5ad95" style="width: 100.0%; height: 100.0%;">     <b>Institution:</b> Aarhus University (AU)<br>     <table style="width:100%; border-collapse: collapse; border: 1px solid black;">         <tr>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Course Name</th>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Tuition Fee</th>         </tr>         <tr><td style='border: 1px solid black; padding: 5px;'>Bioinformatics</td><td style='border: 1px solid black; padding: 5px;'>7650 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Computer Science</td><td style='border: 1px solid black; padding: 5px;'>7650 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Computer Engineering</td><td style='border: 1px solid black; padding: 5px;'>7650 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Cognitive Science</td><td style='border: 1px solid black; padding: 5px;'>4600 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Economics and Business Administration - Finance</td><td style='border: 1px solid black; padding: 5px;'>5000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Economics and Business Administration - Operations and Supply Chain Analytics</td><td style='border: 1px solid black; padding: 5px;'>5000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Economics and Business Administration - International Economic Consulting</td><td style='border: 1px solid black; padding: 5px;'>5000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Economics and Business Administration - Marketing Analytics and Strategy</td><td style='border: 1px solid black; padding: 5px;'>5000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Economics and Business Administration - Commercial and Retail Management</td><td style='border: 1px solid black; padding: 5px;'>5000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Economics and Business Administration - Digital Business Management</td><td style='border: 1px solid black; padding: 5px;'>5000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Economics and Business Administration - Management Accounting and Control</td><td style='border: 1px solid black; padding: 5px;'>5000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Economics and Business Administration - Business Intelligence</td><td style='border: 1px solid black; padding: 5px;'>5000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Electrical Engineering</td><td style='border: 1px solid black; padding: 5px;'>15300 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Anthropology - Visual Anthropology</td><td style='border: 1px solid black; padding: 5px;'>4000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Geophysics</td><td style='border: 1px solid black; padding: 5px;'>7650 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>IT Product Development</td><td style='border: 1px solid black; padding: 5px;'>7650 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Linguistics</td><td style='border: 1px solid black; padding: 5px;'>4000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Mathematics</td><td style='border: 1px solid black; padding: 5px;'>7650 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Business Administration - Business Psychology</td><td style='border: 1px solid black; padding: 5px;'>5000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Human Security</td><td style='border: 1px solid black; padding: 5px;'>4000 EUR</td></tr>     </table>     </div>`)[0];
+                popup_d755f9be6086db63d5a102dcf195beae.setContent(html_ef94d7fb7ce52417dcb0c9ea57a5ad95);
+            
+        
+
+        marker_1e50a71de6b96482d4d578548a5adca9.bindPopup(popup_d755f9be6086db63d5a102dcf195beae)
+        ;
+
+        
+    
+    
+            var marker_c6d248b3c0f630ba4f68da970d479084 = L.marker(
+                [55.6817163935144, 12.5297694994242],
+                {}
+            ).addTo(map_36dba3603576c3b3e274f2c19d40f419);
+        
+    
+            var icon_d1f2b791ad2e99ed8e7e6a985ad7a834 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6d248b3c0f630ba4f68da970d479084.setIcon(icon_d1f2b791ad2e99ed8e7e6a985ad7a834);
+        
+    
+        var popup_09d94c157c98c69aa76589f2bbdcac9b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c817334ed2250d3562fc261c1197a48c = $(`<div id="html_c817334ed2250d3562fc261c1197a48c" style="width: 100.0%; height: 100.0%;">     <b>Institution:</b> Copenhagen Business School (CBS)<br>     <table style="width:100%; border-collapse: collapse; border: 1px solid black;">         <tr>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Course Name</th>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Tuition Fee</th>         </tr>         <tr><td style='border: 1px solid black; padding: 5px;'>Business Administration and Data Science</td><td style='border: 1px solid black; padding: 5px;'>8000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Supply Chain Management (MSc)</td><td style='border: 1px solid black; padding: 5px;'>8000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Business Administration and Digital Business</td><td style='border: 1px solid black; padding: 5px;'>8000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Business Administration and Digital Management (BSc)</td><td style='border: 1px solid black; padding: 5px;'>6400 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>CBS Summer University</td><td style='border: 1px solid black; padding: 5px;'>200 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Sales Management (MSc)</td><td style='border: 1px solid black; padding: 5px;'>8000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Sustainable Tourism and Hospitality Management</td><td style='border: 1px solid black; padding: 5px;'>8000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Public Management and Social Development (MSocSc)</td><td style='border: 1px solid black; padding: 5px;'>8000 EUR</td></tr>     </table>     </div>`)[0];
+                popup_09d94c157c98c69aa76589f2bbdcac9b.setContent(html_c817334ed2250d3562fc261c1197a48c);
+            
+        
+
+        marker_c6d248b3c0f630ba4f68da970d479084.bindPopup(popup_09d94c157c98c69aa76589f2bbdcac9b)
+        ;
+
+        
+    
+    
+            var marker_79b8eea3351b7c8ab8d75c9b043a282c = L.marker(
+                [55.6597923304832, 12.5909687264074],
+                {}
+            ).addTo(map_36dba3603576c3b3e274f2c19d40f419);
+        
+    
+            var icon_3a2a213f0a25ca981e9c1477bbfdcc67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_79b8eea3351b7c8ab8d75c9b043a282c.setIcon(icon_3a2a213f0a25ca981e9c1477bbfdcc67);
+        
+    
+        var popup_bc4c815d95658cea065675c5aeffc609 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d1b3daa228512c17edcb4a110fbec8a0 = $(`<div id="html_d1b3daa228512c17edcb4a110fbec8a0" style="width: 100.0%; height: 100.0%;">     <b>Institution:</b> IT University of Copenhagen (ITU)<br>     <table style="width:100%; border-collapse: collapse; border: 1px solid black;">         <tr>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Course Name</th>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Tuition Fee</th>         </tr>         <tr><td style='border: 1px solid black; padding: 5px;'>Data Science</td><td style='border: 1px solid black; padding: 5px;'>6700 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Software Design</td><td style='border: 1px solid black; padding: 5px;'>6700 EUR</td></tr>     </table>     </div>`)[0];
+                popup_bc4c815d95658cea065675c5aeffc609.setContent(html_d1b3daa228512c17edcb4a110fbec8a0);
+            
+        
+
+        marker_79b8eea3351b7c8ab8d75c9b043a282c.bindPopup(popup_bc4c815d95658cea065675c5aeffc609)
+        ;
+
+        
+    
+    
+            var marker_263f6a8e85509a66fe51d42de48500b7 = L.marker(
+                [55.4882592831369, 9.48233688221845],
+                {}
+            ).addTo(map_36dba3603576c3b3e274f2c19d40f419);
+        
+    
+            var icon_bd74751e99c764dc190caa9d3f23fbb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_263f6a8e85509a66fe51d42de48500b7.setIcon(icon_bd74751e99c764dc190caa9d3f23fbb8);
+        
+    
+        var popup_e6f2de70350e9b0f42490f8911b66aec = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_bd0438ccb4cd7c7a5d3a3bec8d816de3 = $(`<div id="html_bd0438ccb4cd7c7a5d3a3bec8d816de3" style="width: 100.0%; height: 100.0%;">     <b>Institution:</b> International Business Academy (IBA)<br>     <table style="width:100%; border-collapse: collapse; border: 1px solid black;">         <tr>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Course Name</th>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Tuition Fee</th>         </tr>         <tr><td style='border: 1px solid black; padding: 5px;'>Multimedia Design (not available in English from September 2022)</td><td style='border: 1px solid black; padding: 5px;'>5035 EUR</td></tr>     </table>     </div>`)[0];
+                popup_e6f2de70350e9b0f42490f8911b66aec.setContent(html_bd0438ccb4cd7c7a5d3a3bec8d816de3);
+            
+        
+
+        marker_263f6a8e85509a66fe51d42de48500b7.bindPopup(popup_e6f2de70350e9b0f42490f8911b66aec)
+        ;
+
+        
+    
+    
+            var marker_1d0d10a78cbcf158f2d56132cf10c4ae = L.marker(
+                [55.6920446894442, 12.5546473734408],
+                {}
+            ).addTo(map_36dba3603576c3b3e274f2c19d40f419);
+        
+    
+            var icon_22c4bb2d2d2c0156566bea51fb9c9552 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1d0d10a78cbcf158f2d56132cf10c4ae.setIcon(icon_22c4bb2d2d2c0156566bea51fb9c9552);
+        
+    
+        var popup_afd9ac962d31a7b86b422db2e48bcff3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b072a22f9a512e459101a810609e69c6 = $(`<div id="html_b072a22f9a512e459101a810609e69c6" style="width: 100.0%; height: 100.0%;">     <b>Institution:</b> KEA - Copenhagen School of Design and Technology<br>     <table style="width:100%; border-collapse: collapse; border: 1px solid black;">         <tr>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Course Name</th>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Tuition Fee</th>         </tr>         <tr><td style='border: 1px solid black; padding: 5px;'>Software Development</td><td style='border: 1px solid black; padding: 5px;'>5400 EUR</td></tr>     </table>     </div>`)[0];
+                popup_afd9ac962d31a7b86b422db2e48bcff3.setContent(html_b072a22f9a512e459101a810609e69c6);
+            
+        
+
+        marker_1d0d10a78cbcf158f2d56132cf10c4ae.bindPopup(popup_afd9ac962d31a7b86b422db2e48bcff3)
+        ;
+
+        
+    
+    
+            var marker_2bfa9bc9e9310574dd3dc5b546f900e5 = L.marker(
+                [55.6533714166733, 12.1407869642353],
+                {}
+            ).addTo(map_36dba3603576c3b3e274f2c19d40f419);
+        
+    
+            var icon_f3f66198e0f66ebf5e0265eaaf56d8cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2bfa9bc9e9310574dd3dc5b546f900e5.setIcon(icon_f3f66198e0f66ebf5e0265eaaf56d8cd);
+        
+    
+        var popup_af77eea8938f82cfa8943e38f13352db = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_f9c656baa5c309afdab1c8df510b8196 = $(`<div id="html_f9c656baa5c309afdab1c8df510b8196" style="width: 100.0%; height: 100.0%;">     <b>Institution:</b> Roskilde University (RUC)<br>     <table style="width:100%; border-collapse: collapse; border: 1px solid black;">         <tr>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Course Name</th>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Tuition Fee</th>         </tr>         <tr><td style='border: 1px solid black; padding: 5px;'>Mathematical Bioscience</td><td style='border: 1px solid black; padding: 5px;'>7000 EUR</td></tr>     </table>     </div>`)[0];
+                popup_af77eea8938f82cfa8943e38f13352db.setContent(html_f9c656baa5c309afdab1c8df510b8196);
+            
+        
+
+        marker_2bfa9bc9e9310574dd3dc5b546f900e5.bindPopup(popup_af77eea8938f82cfa8943e38f13352db)
+        ;
+
+        
+    
+    
+            var marker_d27b2289e182702a246ffe35b54108d1 = L.marker(
+                [55.7861657934786, 12.5234019840861],
+                {}
+            ).addTo(map_36dba3603576c3b3e274f2c19d40f419);
+        
+    
+            var icon_429d0bfa1f006a754294df7f0f311933 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d27b2289e182702a246ffe35b54108d1.setIcon(icon_429d0bfa1f006a754294df7f0f311933);
+        
+    
+        var popup_08fd0fc41c6b00e766b9f7c6bbda3cef = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4faab4968cbaa50a57f10d7dc0c2fa5f = $(`<div id="html_4faab4968cbaa50a57f10d7dc0c2fa5f" style="width: 100.0%; height: 100.0%;">     <b>Institution:</b> Technical University of Denmark (DTU)<br>     <table style="width:100%; border-collapse: collapse; border: 1px solid black;">         <tr>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Course Name</th>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Tuition Fee</th>         </tr>         <tr><td style='border: 1px solid black; padding: 5px;'>Sustainable Energy - Systems</td><td style='border: 1px solid black; padding: 5px;'>7500 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Autonomous Systems</td><td style='border: 1px solid black; padding: 5px;'>6000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Human-Centered Artifical Intelligence</td><td style='border: 1px solid black; padding: 5px;'>7500 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Bioinformatics and Systems Biology</td><td style='border: 1px solid black; padding: 5px;'>7500 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Business Analytics</td><td style='border: 1px solid black; padding: 5px;'>6000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Data Interaction Cyber Programme 1:1 DTU-KAIST</td><td style='border: 1px solid black; padding: 5px;'>7500 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Engineering Physics</td><td style='border: 1px solid black; padding: 5px;'>7500 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Environmental Engineering</td><td style='border: 1px solid black; padding: 5px;'>7500 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Erasmus Mundus in Security and Cloud Computing</td><td style='border: 1px solid black; padding: 5px;'>6000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Mathematical Modelling and Computation</td><td style='border: 1px solid black; padding: 5px;'>7500 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Physics and Nanotechnology 1:1 DTU-TUM</td><td style='border: 1px solid black; padding: 5px;'>7500 EUR</td></tr>     </table>     </div>`)[0];
+                popup_08fd0fc41c6b00e766b9f7c6bbda3cef.setContent(html_4faab4968cbaa50a57f10d7dc0c2fa5f);
+            
+        
+
+        marker_d27b2289e182702a246ffe35b54108d1.bindPopup(popup_08fd0fc41c6b00e766b9f7c6bbda3cef)
+        ;
+
+        
+    
+    
+            var marker_0b60313baf8b39c967caa023707d1574 = L.marker(
+                [55.6803754496618, 12.57249542826],
+                {}
+            ).addTo(map_36dba3603576c3b3e274f2c19d40f419);
+        
+    
+            var icon_5f7ce2b0024091f5a4ae56c3c6fab521 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0b60313baf8b39c967caa023707d1574.setIcon(icon_5f7ce2b0024091f5a4ae56c3c6fab521);
+        
+    
+        var popup_6d5f66d1097655de725e698d8f4e84b3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e75e62940d323101a6022e0992c5e028 = $(`<div id="html_e75e62940d323101a6022e0992c5e028" style="width: 100.0%; height: 100.0%;">     <b>Institution:</b> University of Copenhagen (UCPH)<br>     <table style="width:100%; border-collapse: collapse; border: 1px solid black;">         <tr>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Course Name</th>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Tuition Fee</th>         </tr>         <tr><td style='border: 1px solid black; padding: 5px;'>Anthropology</td><td style='border: 1px solid black; padding: 5px;'>5000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Bioinformatics</td><td style='border: 1px solid black; padding: 5px;'>7300 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Business and Organisational Anthropology</td><td style='border: 1px solid black; padding: 5px;'>5000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Chemistry</td><td style='border: 1px solid black; padding: 5px;'>7300 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Computer Science</td><td style='border: 1px solid black; padding: 5px;'>7300 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Global Development</td><td style='border: 1px solid black; padding: 5px;'>5000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Statistics</td><td style='border: 1px solid black; padding: 5px;'>5300 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Sustainable Development in Agriculture (Agris Mundus)</td><td style='border: 1px solid black; padding: 5px;'>4000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>IT and Cognition</td><td style='border: 1px solid black; padding: 5px;'>6325 EUR</td></tr>     </table>     </div>`)[0];
+                popup_6d5f66d1097655de725e698d8f4e84b3.setContent(html_e75e62940d323101a6022e0992c5e028);
+            
+        
+
+        marker_0b60313baf8b39c967caa023707d1574.bindPopup(popup_6d5f66d1097655de725e698d8f4e84b3)
+        ;
+
+        
+    
+    
+            var marker_b4b2148c4c97aca1924be048d7c6ac5a = L.marker(
+                [55.3836504060226, 10.4297255345673],
+                {}
+            ).addTo(map_36dba3603576c3b3e274f2c19d40f419);
+        
+    
+            var icon_4d26083e2ee5d9c170e0d070e9b4c02d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b4b2148c4c97aca1924be048d7c6ac5a.setIcon(icon_4d26083e2ee5d9c170e0d070e9b4c02d);
+        
+    
+        var popup_2f4b407ab68a79fed3ca869218f88db3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_0b25cc3927b6709e2adf371017336f8f = $(`<div id="html_0b25cc3927b6709e2adf371017336f8f" style="width: 100.0%; height: 100.0%;">     <b>Institution:</b> University of Southern Denmark (SDU)<br>     <table style="width:100%; border-collapse: collapse; border: 1px solid black;">         <tr>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Course Name</th>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Tuition Fee</th>         </tr>         <tr><td style='border: 1px solid black; padding: 5px;'>Artificial Intelligence for Healthcare Data</td><td style='border: 1px solid black; padding: 5px;'>200 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Deep Learning</td><td style='border: 1px solid black; padding: 5px;'>200 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>IT - Product Design</td><td style='border: 1px solid black; padding: 5px;'>6000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Introduction to Biologically-inspired Robotics and Learning</td><td style='border: 1px solid black; padding: 5px;'>200 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Robot Systems (Advanced Robotics Technology/Drone Technology)</td><td style='border: 1px solid black; padding: 5px;'>6000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Software Engineering</td><td style='border: 1px solid black; padding: 5px;'>6000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Computational Biomedicine</td><td style='border: 1px solid black; padding: 5px;'>6000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Computer Science</td><td style='border: 1px solid black; padding: 5px;'>6000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Continuous Delivery and DevOps</td><td style='border: 1px solid black; padding: 5px;'>200 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Cultural Sociology</td><td style='border: 1px solid black; padding: 5px;'>4250 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Electronics (BEng)</td><td style='border: 1px solid black; padding: 5px;'>5350 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Electronics (BSc)</td><td style='border: 1px solid black; padding: 5px;'>6950 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Introduction to R</td><td style='border: 1px solid black; padding: 5px;'>200 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Mathematics</td><td style='border: 1px solid black; padding: 5px;'>6000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Physics and Technology (MSc)</td><td style='border: 1px solid black; padding: 5px;'>6950 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Public Health</td><td style='border: 1px solid black; padding: 5px;'>5100 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Software Engineering (BSc)</td><td style='border: 1px solid black; padding: 5px;'>7000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Brand Management and Marketing Communication</td><td style='border: 1px solid black; padding: 5px;'>6000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Design and build drones for environmental monitoring and sustainable precision farming</td><td style='border: 1px solid black; padding: 5px;'>200 EUR</td></tr>     </table>     </div>`)[0];
+                popup_2f4b407ab68a79fed3ca869218f88db3.setContent(html_0b25cc3927b6709e2adf371017336f8f);
+            
+        
+
+        marker_b4b2148c4c97aca1924be048d7c6ac5a.bindPopup(popup_2f4b407ab68a79fed3ca869218f88db3)
+        ;
+
+        
+    
+    
+            var marker_a9311f453b2cc8810d117f29fc045477 = L.marker(
+                [55.8997922305588, 9.83744958806077],
+                {}
+            ).addTo(map_36dba3603576c3b3e274f2c19d40f419);
+        
+    
+            var icon_dee7473b6df1e2e8f06142d6a3803c26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a9311f453b2cc8810d117f29fc045477.setIcon(icon_dee7473b6df1e2e8f06142d6a3803c26);
+        
+    
+        var popup_e9f6ebc18fa9786d41afcda591265d38 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_631aa03373296ea3d6a7f146652bf969 = $(`<div id="html_631aa03373296ea3d6a7f146652bf969" style="width: 100.0%; height: 100.0%;">     <b>Institution:</b> VIA University College<br>     <table style="width:100%; border-collapse: collapse; border: 1px solid black;">         <tr>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Course Name</th>             <th style="border: 1px solid black; padding: 5px; background-color: #f2f2f2;">Tuition Fee</th>         </tr>         <tr><td style='border: 1px solid black; padding: 5px;'>Branding and Marketing Management - Design & Business (Top-up degree)</td><td style='border: 1px solid black; padding: 5px;'>7933 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Software Technology Engineering</td><td style='border: 1px solid black; padding: 5px;'>8000 EUR</td></tr><tr><td style='border: 1px solid black; padding: 5px;'>Deep Dive into Entrepreneurship</td><td style='border: 1px solid black; padding: 5px;'>200 EUR</td></tr>     </table>     </div>`)[0];
+                popup_e9f6ebc18fa9786d41afcda591265d38.setContent(html_631aa03373296ea3d6a7f146652bf969);
+            
+        
+
+        marker_a9311f453b2cc8810d117f29fc045477.bindPopup(popup_e9f6ebc18fa9786d41afcda591265d38)
+        ;
+
+        
+    
+</script>
+</html>
