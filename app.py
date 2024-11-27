@@ -4,6 +4,10 @@ import plotly.express as px
 import plotly.graph_objects as go
 import graph_helpers
 
+# Initialize the app
+app = Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}])
+server = app.server  # Expose the Flask server for Render
+
 def load_data():
     data_1 = pd.read_excel("data/ai_related_courses.xlsx")
     data_2 = pd.read_excel("data/employment_status_3_month_graduates_2013_2020.xlsx")
@@ -12,8 +16,6 @@ def load_data():
     data_5 = pd.read_excel("data/num_students_entrants_complete_by_age_sex_2013_2023.xlsx")
     return data_1, data_2, data_3, data_4, data_5
 
-# Initialize the app
-app = Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}])
 
 # Load data when the app starts
 data_1, data_2, data_3, data_4, data_5 = load_data()
@@ -173,6 +175,6 @@ def update_histogram(year):
     data_1, data_2, data_3, data_4, data_5 = load_data()
     return graph_helpers.hist_binning_age_and_gender_distribution(data_5, str(year))
 
-# Run the app
+
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False, host='0.0.0.0', port=8080)  # Port 8080 for Render
